@@ -208,7 +208,7 @@ function loadContractData() {
 	
 	// Set referral link
 if (currentAddr) {
-    $("#ref-link").val('https://usdtzone.club' + '/?ref=' + currentAddr);
+    $("#ref-link").val('https://usdtstake.club' + '/?ref=' + currentAddr);
 }
 
     // User referrer
