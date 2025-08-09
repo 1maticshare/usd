@@ -238,23 +238,27 @@
 
 
 
-    <section class="latest-transaction-section section-bg">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-header">
-              <h2 class="section-title">Your Deposits</h2>
-            </div>
-          </div>
+   <section class="latest-transaction-section section-bg py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 text-center">
+        <div class="section-header">
+          <h2 class="section-title">Your Deposits</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-
-            <div class="transaction-table-area">
+      </div>
+    </div>
+       <div class="row">
+      <div class="col-12">
+        <div class="transaction-table-area">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="latest-deposit" role="tabpanel" aria-labelledby="latest-deposit-tab">
+             
               <div class="tab-content">
                 <div class="tab-pane fade show active" id="latest-deposit" role="tabpanel"
                   aria-labelledby="latest-deposit-tab">
-                  <table class="transaction-table" style="text-align: center;">
+                 <div class="table-responsive">
+                <table class="table table-bordered text-center transaction-table">
                     <thead>
                       <tr>
                         <th>Amount</th>
@@ -274,6 +278,8 @@
           </div>
         </div>
       </div>
+      </div>
+       </div>
     </section>
 
     <section class="latest-transaction-section pt-150 pb-150 section-bg">
