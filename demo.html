@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>USDTSTAKE - Decentralized The Web</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/animate.css">
+  <link rel="stylesheet" href="css/iziToast.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+ <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+  <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body style="background-color: black;">
+  <div fs-scrolldisable-element="smart-nav" data-animation="default" data-collapse="medium" data-duration="400"
+    data-easing="ease" data-easing2="ease" role="banner" class="nav w-nav">
+    <div class="nav__bg" style="will-change: background; background-color: rgba(0, 0, 0, 0);"></div>
+    <div class="container is--nav w-container">
+      <div id="topmenu" class="nav__wrap">
+        <a href="/" aria-current="page" class="nav__brand w-nav-brand" aria-label="home">
+          <img src="assets/images/logousdt.png" loading="lazy" alt="" class="nav__brand__img menulogo">
+          <img src="assets/images/logousdt.png" loading="lazy" alt="" class="nav__brand__img menulogo1">
+        </a>
+        <nav role="navigation" class="nav__menu w-nav-menu" style="transform: translateY(0px) translateX(0px)">
+          <div class="nav__mobile__bg-wrap">
+            <img src="assets/images/logousdt.png" loading="lazy" sizes="100vw" srcset="500w, 580w" alt=""
+              class="nav__mobile__bg-image menulogo">
+          </div>
+          <div data-hover="true" data-delay="0" class="nav__link w-dropdown" style="max-width: 1150px;">
+            <div class="nav__link__toggle w-dropdown-toggle" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0"
+              aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <a href="./">Home</a>
+            </div>
+          </div>
+          <div data-hover="true" data-delay="0" class="nav__link w-dropdown" style="max-width: 1150px;">
+            <div class="nav__link__toggle w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1"
+              aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <a href="assets/images/usdtstake.pdf  " target="_blank">Presentation</a>
+            </div>
+          </div>
+          <div data-hover="true" data-delay="0" class="nav__link w-dropdown" style="max-width: 1150px;">
+            <div class="nav__link__toggle w-dropdown-toggle" id="w-dropdown-toggle-3" aria-controls="w-dropdown-list-2"
+              aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <a href="#how">How It Works</a>
+            </div>
+          </div>
+          <div data-hover="true" data-delay="0" class="nav__link w-dropdown" style="max-width: 1150px;">
+            <div class="nav__link__toggle w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1"
+              aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <a href="#" target="_blank">Smart Contract</a>
+            </div>
+          </div>
+          <div data-hover="true" data-delay="0" class="nav__link w-dropdown" style="max-width: 1150px;">
+            <div class="nav__link__toggle w-dropdown-toggle" id="w-dropdown-toggle-3" aria-controls="w-dropdown-list-2"
+              aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <a href="#" id="connect_btn" >Connect </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="nav__mobile-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"
+          tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+          <img id="toggle" src="./assets/images/hamburger-menu.svg" loading="lazy" alt=""
+            class="nav__mobile-button-img is--open icon3">
+          <img id="" src="assets/images/close-menu.svg" loading="lazy" alt="" class="nav__mobile-button-img is--close">
+        </div>
+      </div>
+    </div>
+    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+  </div>
+
+  <div class="dark-version">
+
+
+
+    <section class="hero-section section-bg">
+      <div class="container">
+        <div class="row align-items-center">
+
+
+          <div class="col-lg-6 order-lg-2 order-1">
+
+<center><iframe src="https://free.timeanddate.com/countdown/ia0ljqqc/cf12/cm0/cu4/ct5/cs1/ca0/cr0/ss0/cacff0/cpc0f0/pct/tcfff/fn2/fs150/szw320/szh135/tatLaunching/tacf90/tptLaunched/tpc0f0/mat10-08-2025%2014%3A30%20UTC/macfff/mpc000/iso2025-08-10T14:30:00" allowtransparency="true" frameborder="0" width="240" height="98"></iframe>
+</center>
+<br>
+            <h2 class="hero-title" style="color:#ffffff;">Welcome to USDT Stake DeFi Solutions Shaping the Future of Finance.
+            </h2>
+
+
+            
+
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1">
+
+
+
+            <div class="btn-area">
+
+              <div class="gradient-hover-effect">
+                <a href="#" id="total_invested_global" class="youtube">Total Investment : 00</a>
+              </div>
+
+            </div>
+            <div class="btn-area">
+
+              <div class="gradient-hover-effect">
+                <a href="#" id="totalDeposits" class="youtube">Total Users : 00</a>
+              </div>
+
+
+            </div>
+             <div class="btn-area">
+
+              <div class="gradient-hover-effect">
+                <a href="https://t.me/usdtstakeofficial" target="_blank">Join Telegram</a>
+              </div>
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-section pt-150 pb-150 section-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+
+
+          <div class="container11">
+            <p class="container-title">Binance USDT Staking</p>
+                   <div class="gradient-cards">
+              <div class="card">
+                <div class="container-card bg-yellow-box">
+                  <p class="enterammount card-title">Deposit Now</p>
+                  <center>
+            <p class="enterammount card-description" style="color: #30edb3;">Earn daily yield & Utilize your staking</p></center>
+     
+                  <p class="enterammount card-description">DIVIDEND - 4%</p>
+                  <p class="enterammount card-description">TOTAL PROFIT - 400%</p>
+                  <p class="enterammount card-description">Your Upline</p>
+                  <p class="enterammount card-description" id="upline-address">0000....0000</p>
+                  <div class="enterammount">
+                    <input type="text" id="amt_input" placeholder="Enter Amount" />
+                    <button id="investBtn" onclick="invest(document.getElementById('amt_input').value)"
+                      class="getstarted mt">Deposit</button>
+                  </div>
+                </div>
+             <br>
+                <div class="container-card bg-yellow-box">
+                  <p class="enterammount card-title">Withdraw</p>    
+                  <p class="enterammount card-description" style="color: #30edb3;">AVAILABLE TO WITHDRAW</p>
+                  <p class="enterammount card-description">DIVIDEND : &nbsp; <span id="user-available"> 00 &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">DIRECT : &nbsp;<span id="direct_bonus_avail"> 00
+                      &nbsp;</span> USDT
+                  </p>
+                  <p class="enterammount card-description">GENERATION : &nbsp;<span id="gi_bonus"> 00 &nbsp;</span> USDT
+                  </p>
+                  <p class="enterammount card-description">TOTAL : &nbsp;<span id="total_avail"> 00 &nbsp;</span> USDT
+                  </p>
+                  <p class=" card-description bnbtest" style="color: #14111500;">You should have little fraction
+                    of BNB for the transaction
+                    fee</p>
+                  <div class="enterammount withrrowbutto">
+                    <button class="getstarted" id="wdbtn">Withdraw</button>
+                  </div>
+                </div>
+                <br>
+                  <div class="card">
+                          <div class="container-card bg-yellow-box">
+                  <p class="enterammount card-title">How To Refer Your Friends</p>
+                  <div class="enterammount">
+                    <input type="text" id="ref-link" />
+                    <button onClick="copyToClipboard('#ref-link')" class="getstarted">Copy</button><br>
+                    </div>
+                   <p class="enterammount card-description" style="color: #30edb3;">Share your referral link with friends</p>  
+                  
+                </div>
+              </div>
+                <br>
+                     <div class="container-card bg-yellow-box">
+                  <p class="enterammount card-title">Total Earning</p>
+
+                  <p class="enterammount card-description">TOTAL INVESTED : &nbsp; <span id="total-invested"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">DIVIDEND : &nbsp; <span id="user-available1"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">DIRECT BONUS : &nbsp; <span id="total_direct_bonus"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">GENERATION BONUS : &nbsp; <span id="total_gi_bonus"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">REMAINING EARNING : &nbsp; <span id="total-available"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+                  <p class="enterammount card-description">TOTAL EARNING : &nbsp; <span id="total-withdrawn"> 00
+                      &nbsp;</span>
+                    USDT
+                  </p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="latest-transaction-section section-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-header">
+              <h2 class="section-title">Your Deposits</h2>
+            </div>
+          </div>
+        </div>
+       <div class="gradient-cards">
+              <div class="card">
+                <div class="container-card bg-yellow-box">
+            <div class="transaction-table-area">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="latest-deposit" role="tabpanel"
+                  aria-labelledby="latest-deposit-tab">
+                  <table class="transaction-table" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>Amount</th>
+                        <th>Date</th>
+
+
+                      </tr>
+                    </thead>
+                    <tbody id="user-deposits" style="color: #ffffff;">
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="latest-transaction-section pt-150 pb-150 section-bg">
+      <div class="ulka-1"><img src="assets/images/elements/ulka-3.png" alt="image"></div>
+      <div class="ulka-2"><img src="assets/images/elements/ulka-4.png" alt="image"></div>
+      <div class="ulka-3"><img src="assets/images/elements/ulka-5.png" alt="image"></div>
+      <div class="ulka-4"><img src="assets/images/elements/ulka-4.png" alt="image"></div>
+      <div class="circle"><img src="assets/images/elements/round-circle-2.png" alt="image"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-header">
+              <h2 class="section-title">Generations</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="transaction-table-area">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="latest-deposit" role="tabpanel"
+                  aria-labelledby="latest-deposit-tab">
+                  <table class="transaction-table" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>Level</th>
+                        <th>Generation</th>
+                        <th>Direct</th>
+                        <th>Heads</th>
+                        <th>Business</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>Level 1</span></td>
+                        <td><span>20%</span></td>
+                        <td><span>1</span></td>
+                        <td><span id="ref_0">0</span></td>
+                        <td><span id="lb_0">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 2</span></td>
+                        <td><span>10%</span></td>
+                        <td><span>2</span></td>
+                        <td><span id="ref_1">0</span></td>
+                        <td><span id="lb_1">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 3</span></td>
+                        <td><span>5%</span></td>
+                        <td><span>3</span></td>
+                        <td><span id="ref_2">0</span></td>
+                        <td><span id="lb_2">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 4</span></td>
+                        <td><span>3%</span></td>
+                        <td><span>4</span></td>
+                        <td><span id="ref_3">0</span></td>
+                        <td><span id="lb_3">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 5</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>5</span></td>
+                        <td><span id="ref_4">0</span></td>
+                        <td><span id="lb_4">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 6</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>6</span></td>
+                        <td><span id="ref_5">0</span></td>
+                        <td><span id="lb_5">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 7</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>7</span></td>
+                        <td><span id="ref_6">0</span></td>
+                        <td><span id="lb_6">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 8</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>8</span></td>
+                        <td><span id="ref_7">0</span></td>
+                        <td><span id="lb_7">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 9</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>9</span></td>
+                        <td><span id="ref_8">0</span></td>
+                        <td><span id="lb_8">0</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Level 10</span></td>
+                        <td><span>2%</span></td>
+                        <td><span>10</span></td>
+                        <td><span id="ref_9">0</span></td>
+                        <td><span id="lb_9">0</span></td>
+                      </tr>
+                      
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="how" class="profit-step-section section-bg pb-150 section-bg">
+      <div class="container">
+        <div class="row" style=" margin-top: 136px;">
+          <div class="col-lg-4">
+            <div class="profit-step-area">
+              <div class="round-circle"><img src="assets/images/elements/round-circle.png" alt="image"></div>
+              <ul class="nav nav-tabs" id="profitTab" role="tablist">
+                <li class="wow zoomIn" data-wow-duration="0.5" data-wow-delay="0.3s">
+                  <a id="step-one-tab" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one"
+                    aria-selected="true">step 01</a>
+                </li>
+                <li class="wow zoomIn" data-wow-duration="0.5" data-wow-delay="0.4s">
+                  <a id="step-two-tab" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two"
+                    aria-selected="false">step 02</a>
+                </li>
+                <li class="wow zoomIn" data-wow-duration="0.5" data-wow-delay="0.7s">
+                  <a id="step-three-tab" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three"
+                    aria-selected="false">step 03</a>
+                </li>
+                <li class="wow zoomIn" data-wow-duration="0.5" data-wow-delay="0.9s">
+                  <a id="step-four-tab" data-toggle="tab" href="#step-four" role="tab" aria-controls="step-four"
+                    aria-selected="false">step 04</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="profit-step-content-wrapper">
+              <h2 class="title">Steps to start</h2>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="step-one-tab">
+                  <div class="profit-step-content">
+                    <h3 class="title">Step 01 - Choose BNB Wallet</h3>
+                    <p>Open Trust Wallet/Meta mask then Click on DApps</p>
+                    <ul>
+                      <li>We recommend you use one of our chosen partner wallets namely, Trust Wallet or MetaMask.</li>
+
+                    </ul>
+                  </div><!-- profit-step-content end -->
+                </div>
+                <div class="tab-pane fade" id="step-two" role="tabpanel" aria-labelledby="step-two-tab">
+                  <div class="profit-step-content">
+                    <h3 class="title">Step 02 - Make Registration</h3>
+                    <p></p>
+                    <ul>
+                      <li>Enter URL https://www.USDTSTAKE.club and Change the Network to BNB Smart Chain </li>
+
+                    </ul>
+                  </div><!-- profit-step-content end -->
+                </div>
+                <div class="tab-pane fade" id="step-three" role="tabpanel" aria-labelledby="step-three-tab">
+                  <div class="profit-step-content">
+                    <h3 class="title">Step 03 - Approve Payment</h3>
+                    <p>Enter the USDT (Bep20) Amount and Deposit.</p>
+                    <ul>
+
+                    </ul>
+                  </div><!-- profit-step-content end -->
+                </div>
+                <div class="tab-pane fade" id="step-four" role="tabpanel" aria-labelledby="step-four-tab">
+                  <div class="profit-step-content">
+                    <h3 class="title">Step 04 - Dividend start </h3>
+                    <p>Congratulation’s your earning starts 4% Daily.</p>
+                    <ul>
+                      <li>You are now member of A Decentralized Platform. </li>
+                    </ul>
+                  </div><!-- profit-step-content end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="profit-calculator-section pt-100 pb-120 section-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="profit-calculator-wrapper">
+              <h2 class="title">KEY POINTS</h2>
+              <form class="profit-calculator-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label> Input and output both will be in $USDT(Bep20) </label>
+
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label> You will be given 400% of your Investment. </label>
+
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label>To earn Referral Earning You Need to Re Top up Your ID.</label>
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="profit-thumb">
+              <img src="assets/images/logousdt.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="Reffral" class="commission-section section-bg">
+      <div class="container ">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 mt-5">
+            <div class="commission-thumb wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.3s">
+              <img src="assets/images/elements/commission.png" alt="image" class="main-img">
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5">
+            <div class="commission-content wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.4s">
+              <h2 class="title"> Referral Commission</h2>
+              <p>This concept is designed to transfer your $USDT(Bep20) from wallet to wallet. All transactions are
+                being made
+                100% authentically from the contract address to participants wallet.</p>
+              <ul class="cmn-list">
+                <li>With the help of referral commission , Which will reduce the time of it.</li>
+                <li>Open-source Smart Contract based on Blockchain.</li>
+                <li>Earn passive income from day 1st through your levels</li>
+                <li>Direct Income 10% .</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section section-bg">
+
+
+
+      <div class="man-left">
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+
+              <p style="color:#ffffff">Copyright USDTSTAKE © 2025. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/vendor/jquery-migrate-3.0.0.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/slick.min.js"></script>
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+  <script src="assets/js/vendor/menu-spy.min.js"></script>
+  <script src="assets/js/vendor/jquery.easing.min.js"></script>
+  <script src="assets/js/contact.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.8.0.min.js"
+    integrity="sha256-jFdOCgY5bfpwZLi0YODkqNXQdIxKpm6y5O/fy0baSzE=" crossorigin="anonymous"></script>
+  <script src="js/jquery.parallax.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="js/index.js"></script>
+   <!--<script src="js/web3.min.js"></script> -->
+  <script src="js/iziToast.min.js"></script>
+
+
+  <script src="./js/webflow.9a6c34b77.js" type="text/javascript">
+  </script>
+</body>
+
+</html>
+<script>
+function showAlert(msg) {
+  const Toast = Swal.mixin({
+    toast: true,
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+  });
+  Toast.fire({
+    icon: "success",
+    title: msg,
+  });
+}
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).val()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  showAlert('Successfuly copied', 'success')
+
+}</script>
