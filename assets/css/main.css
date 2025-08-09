@@ -1275,7 +1275,7 @@ a:hover {
 }
 
 .header-section .main-menu li .sub-menu li a:hover {
-    background-color: rgba(38, 174, 97, 0.05);
+    background-color: rgba(0, 92, 230, 0.05);
     color: #ffffff;
     text-decoration: underline;
 }
