@@ -984,7 +984,7 @@ span {
 }
 
 a:hover {
-    color: #0f4742;
+    color: #28bdb1;
 }
 
 section {
@@ -1088,7 +1088,7 @@ a {
     /*font-family: 'Rubik', sans-serif !important;*/
     font-family: 'Poppins', sans-serif;
 
-    color:#0f4742;
+    color:#28bdb1;
 }
 
 a:hover {
@@ -2757,14 +2757,14 @@ div[class*="col"]:nth-child(4) .statistics-item .round-icon {
     left: 50%;
     margin-left: -45px;
     border-radius: 50%;
-    border: 2px solid #0f4742;
+    border: 2px solid #28bdb1;
     padding: 5px;
 }
 
 .profit-step-area .nav-tabs li:nth-child(1) a {
-    background-image: -moz-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -webkit-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -ms-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
+    background-image: -moz-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -webkit-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -ms-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
 }
 
 .profit-step-area .nav-tabs li:nth-child(2) {
@@ -2772,14 +2772,14 @@ div[class*="col"]:nth-child(4) .statistics-item .round-icon {
     left: -50px;
     margin-top: -45px;
     border-radius: 50%;
-    border: 2px solid #0f4742;
+    border: 2px solid #28bdb1;
     padding: 5px;
 }
 
 .profit-step-area .nav-tabs li:nth-child(2) a {
-    background-image: -moz-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -webkit-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -ms-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
+    background-image: -moz-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -webkit-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -ms-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
 }
 
 .profit-step-area .nav-tabs li:nth-child(3) {
@@ -2787,14 +2787,14 @@ div[class*="col"]:nth-child(4) .statistics-item .round-icon {
     left: 50%;
     margin-left: -45px;
     border-radius: 50%;
-    border: 2px solid #0f4742;
+    border: 2px solid #28bdb1;
     padding: 5px;
 }
 
 .profit-step-area .nav-tabs li:nth-child(3) a {
-    background-image: -moz-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -webkit-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -ms-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
+    background-image: -moz-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -webkit-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -ms-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
 }
 
 .profit-step-area .nav-tabs li:nth-child(4) {
@@ -2802,14 +2802,14 @@ div[class*="col"]:nth-child(4) .statistics-item .round-icon {
     right: -50px;
     margin-top: -45px;
     border-radius: 50%;
-    border: 2px solid #0f4742;
+    border: 2px solid #28bdb1;
     padding: 5px;
 }
 
 .profit-step-area .nav-tabs li:nth-child(4) a {
-    background-image: -moz-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -webkit-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
-    background-image: -ms-linear-gradient(34deg, #0f4742 61%, #0f4742 89%, white 97%);
+    background-image: -moz-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -webkit-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
+    background-image: -ms-linear-gradient(34deg, #28bdb1 61%, #28bdb1 89%, white 97%);
 }
 
 .profit-step-area .nav-tabs li a {
@@ -3167,7 +3167,7 @@ font-family: 'Poppins', sans-serif;
   /*  background-image: -moz-linear-gradient(-9deg, #319cd7 19%, #37aed0 56%, #3dbfc9 88%);
     background-image: -webkit-linear-gradient(-9deg, #319cd7 19%, #37aed0 56%, #3dbfc9 88%);
     background-image: -ms-linear-gradient(-9deg, #319cd7 19%, #37aed0 56%, #3dbfc9 88%);*/
-    background: #0f4742;
+    background: #28bdb1;
 }
 
 .transaction-table thead tr th {
@@ -6023,7 +6023,7 @@ div[class*="col"]:nth-of-type(3n + 3) .contact-info-single .icon {
     transition: background-color 1s;
     place-content: center;
     border-radius: 50px;
-    border: 1px solid #0f4742 !important;
+    border: 1px solid #28bdb1 !important;
     width: auto;
 }
 
@@ -6117,7 +6117,7 @@ div[class*="col"]:nth-of-type(3n + 3) .contact-info-single .icon {
   
   .container-card {
     position: relative;
-    border: 2px solid #0f474266;
+    border: 2px solid #28bdb166;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
     background-clip: padding-box;
     border-radius: 45px;
@@ -6270,7 +6270,7 @@ div[class*="col"]:nth-of-type(3n + 3) .contact-info-single .icon {
     color: lightgray; /* Change this to your preferred light color */
 }
   .enterammount .getstarted{
-    background-color: #0f4742;
+    background-color: #28bdb1;
     margin-top: 20px;
     right: 2px;
     top: 23px;
